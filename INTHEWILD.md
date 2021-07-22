@@ -53,7 +53,7 @@ Currently, **officially** using Airflow:
 1. [Arrive](https://www.arrive.com/)
 1. [Artelys](https://www.artelys.com/) [[@fortierq](https://github.com/fortierq)]
 1. [Asana](https://asana.com/) [[@chang](https://github.com/chang), [@dima-asana](https://github.com/dima-asana), [@jdavidheiser](https://github.com/jdavidheiser), [@ricardoandresrojas](https://github.com/ricardoandresrojas)]
-1. [Astronomer](https://www.astronomer.io) [[@schnie](https://github.com/schnie), [@ashb](https://github.com/ashb), [@kaxil](https://github.com/kaxil), [@dimberman](https://github.com/dimberman), [@andriisoldatenko](https://github.com/andriisoldatenko), [@ryw](https://github.com/ryw), [@ryanahamilton](https://github.com/ryanahamilton), [@jhtimmins](https://github.com/jhtimmins), [@vikramkoka](https://github.com/vikramkoka)]
+1. [Astronomer](https://www.astronomer.io) [[@schnie](https://github.com/schnie), [@ashb](https://github.com/ashb), [@kaxil](https://github.com/kaxil), [@dimberman](https://github.com/dimberman), [@andriisoldatenko](https://github.com/andriisoldatenko), [@ryw](https://github.com/ryw), [@ryanahamilton](https://github.com/ryanahamilton), [@jhtimmins](https://github.com/jhtimmins), [@vikramkoka](https://github.com/vikramkoka), [@jedcunningham](https://github.com/jedcunningham)]
 1. [Auth0](https://auth0.com) [[@scottypate](https://github.com/scottypate)], [[@dm03514](https://github.com/dm03514)], [[@karangale](https://github.com/karangale)]
 1. [Automattic](https://automattic.com/) [[@anandnalya](https://github.com/anandnalya), [@bperson](https://github.com/bperson), [@khrol](https://github.com/Khrol), [@xyu](https://github.com/xyu)]
 1. [Avesta Technologies](https://avestatechnologies.com) [[@TheRum](https://github.com/TheRum)]
@@ -127,6 +127,7 @@ Currently, **officially** using Airflow:
 1. [Credit Karma](https://www.creditkarma.com/) [[@preete-dixit-ck](https://github.com/preete-dixit-ck) & [@harish-gaggar-ck](https://github.com/harish-gaggar-ck) & [@greg-finley-ck](https://github.com/greg-finley-ck)]
 1. [Creditas](https://www.creditas.com.br) [[@dcassiano](https://github.com/dcassiano)]
 1. [CreditCards.com](https://www.creditcards.com/) [[@vmAggies](https://github.com/vmAggies) &  [@jay-wallaby](https://github.com/jay-wallaby)]
+1. [CRST - The Transportation Solution, Inc.](https://crst.com)
 1. [Cryptalizer.com](https://www.cryptalizer.com/)
 1. [Currency](https://www.gocurrency.com/) [[@FCLI](https://github.com/FCLI) & [@alexbegg](https://github.com/alexbegg)]
 1. [Custom Ink](https://www.customink.com/) [[@david-dalisay](https://github.com/david-dalisay), [@dmartin11](https://github.com/dmartin11) & [@mpeteuil](https://github.com/mpeteuil)]
@@ -346,6 +347,7 @@ Currently, **officially** using Airflow:
 1. [Sidecar](https://hello.getsidecar.com/) [[@getsidecar](https://github.com/getsidecar)]
 1. [SimilarWeb](https://www.similarweb.com/) [[@similarweb](https://github.com/similarweb)]
 1. [Simply Business](https://www.simplybusiness.com/) [[@simplybusiness](https://github.com/simplybusiness)]
+1. [Skai](https://www.skai.io/) [[@kenshoo](https://github.com/kenshoo)]
 1. [Skyscanner](https://www.skyscanner.net/) [[@skyscanner](https://github.com/Skyscanner)]
 1. [SmartNews](https://www.smartnews.com/) [[@takus](https://github.com/takus)]
 1. [SnapTravel](https://www.snaptravel.com/)
@@ -364,6 +366,7 @@ Currently, **officially** using Airflow:
 1. [Syapse](https://www.syapse.com/) [[@zedmor](https://github.com/zedmor)]
 1. [T2 Systems](http://t2systems.com) [[@unclaimedpants](https://github.com/unclaimedpants)]
 1. [Tails.com](https://tails.com/) [[@alanmcruickshank](https://github.com/alanmcruickshank)]
+1. [Talkdesk](https://www.talkdesk.com)
 1. [TEK](https://www.tek.fi/en) [[@telac](https://github.com/telac)]
 1. [Telefonica Innovation Alpha](https://www.alpha.company/) [[@Alpha-Health](https://github.com/Alpha-health)]
 1. [Telia Company](https://www.teliacompany.com/en)
@@ -406,13 +409,14 @@ Currently, **officially** using Airflow:
 1. [Vidora](https://www.vidora.com/)
 1. [Ville de Montréal](http://ville.montreal.qc.ca/) [[@VilledeMontreal](https://github.com/VilledeMontreal/)]
 1. [Vnomics](https://github.com/vnomics) [[@lpalum](https://github.com/lpalum)]
-1. [Walmart Labs](https://www.walmartlabs.com) [[@bharathpalaksha](https://github.com/bharathpalaksha), [@vipul007ravi](https://github.com/vipul007ravi)]
+1. [Walmart Labs](https://www.walmartlabs.com) [[@bharathpalaksha](https://github.com/bharathpalaksha), [@vipul007ravi](https://github.com/vipul007ravi), [@pateash](https://github.com/pateash)]
 1. [Waze](https://www.waze.com) [[@waze](https://github.com/wazeHQ)]
 1. [WePay](http://www.wepay.com) [[@criccomini](https://github.com/criccomini) & [@mtagle](https://github.com/mtagle)]
 1. [WeTransfer](https://github.com/WeTransfer) [[@coredipper](https://github.com/coredipper) & [@higee](https://github.com/higee) & [@azclub](https://github.com/azclub)]
 1. [Whistle Labs](http://www.whistle.com) [[@ananya77041](https://github.com/ananya77041)]
 1. [Wildlifestudios](https://wildlifestudios.com/)
 1. [WiseBanyan](https://wisebanyan.com/)
+1. [Wise](https://wise.com) [[@koszti](https://github.com/koszti)]
 1. [Wisr](https://wisr.com.au/) [[@fsodano](https://github.com/fsodano) & [@vincyf1](https://github.com/vincyf1)]
 1. [WixAnswers](https://www.wixanswers.com/) [[@eladkal](https://github.com/eladkal)]
 1. [Wix](https://www.wix.com/) [[@eladkal](https://github.com/eladkal)]

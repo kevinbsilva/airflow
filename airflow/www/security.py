@@ -58,7 +58,7 @@ EXISTING_ROLES = {
 }
 
 
-class AirflowSecurityManager(SecurityManager, LoggingMixin):  # pylint: disable=too-many-public-methods
+class AirflowSecurityManager(SecurityManager, LoggingMixin):
     """Custom security manager, which introduces a permission model adapted to Airflow"""
 
     ###########################################################################
@@ -199,7 +199,7 @@ class AirflowSecurityManager(SecurityManager, LoggingMixin):  # pylint: disable=
 
     def init_role(self, role_name, perms):
         """
-        Initialize the role with the actions and related resources.
+        Initialize the role with actions and related resources.
         :param role_name:
         :param perms:
         :return:
@@ -230,7 +230,7 @@ class AirflowSecurityManager(SecurityManager, LoggingMixin):  # pylint: disable=
                     self.add_permission_to_role(role, perm)
 
     def add_permissions(self, role, perms):
-        """Adds resource permissions to a given role."""
+        """Adds permissions to a given role."""
         for action_name, resource_name in perms:
             permission = self.create_permission(action_name, resource_name)
             self.add_permission_to_role(role, permission)
@@ -539,8 +539,8 @@ class AirflowSecurityManager(SecurityManager, LoggingMixin):  # pylint: disable=
         sesh = self.get_session
         perms = sesh.query(sqla_models.PermissionView).filter(
             or_(
-                sqla_models.PermissionView.permission == None,  # noqa pylint: disable=singleton-comparison
-                sqla_models.PermissionView.view_menu == None,  # noqa pylint: disable=singleton-comparison
+                sqla_models.PermissionView.permission == None,  # noqa
+                sqla_models.PermissionView.view_menu == None,
             )
         )
         # Since FAB doesn't define ON DELETE CASCADE on these tables, we need
@@ -686,7 +686,7 @@ class AirflowSecurityManager(SecurityManager, LoggingMixin):  # pylint: disable=
                     self._merge_perm(action_name, dag_resource_name)
 
             if dag.access_control:
-                self._sync_dag_view_permissions(dag_resource_name, dag.access_control)
+                self.sync_perm_for_dag(dag_resource_name, dag.access_control)
 
     def update_admin_permission(self):
         """
@@ -901,7 +901,7 @@ class AirflowSecurityManager(SecurityManager, LoggingMixin):  # pylint: disable=
 class ApplessAirflowSecurityManager(AirflowSecurityManager):
     """Security Manager that doesn't need the whole flask app"""
 
-    def __init__(self, session=None):  # pylint: disable=super-init-not-called
+    def __init__(self, session=None):
         self.session = session
 
     @property
