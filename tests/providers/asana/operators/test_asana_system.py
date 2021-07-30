@@ -15,37 +15,17 @@
 # KIND, either express or implied.  See the License for the
 # specific language governing permissions and limitations
 # under the License.
-"""
-Example use of MySql related operators.
-"""
+import os
 
-from airflow import DAG
-from airflow.providers.mysql.operators.mysql import MySqlOperator
-from airflow.utils.dates import days_ago
+import pytest
 
-dag = DAG(
-    'example_mysql',
-    start_date=days_ago(2),
-    tags=['example'],
-)
+from tests.test_utils import AIRFLOW_MAIN_FOLDER
+from tests.test_utils.system_tests_class import SystemTest
 
-# [START howto_operator_mysql]
+DAG_FOLDER = os.path.join(AIRFLOW_MAIN_FOLDER, "airflow", "providers", "asana", "example_dags")
 
-drop_table_mysql_task = MySqlOperator(
-    task_id='create_table_mysql', mysql_conn_id='mysql_conn_id', sql=r"""DROP TABLE table_name;""", dag=dag
-)
 
-# [END howto_operator_mysql]
-
-# [START howto_operator_mysql_external_file]
-
-mysql_task = MySqlOperator(
-    task_id='create_table_mysql_external_file',
-    mysql_conn_id='mysql_conn_id',
-    sql='/scripts/drop_table.sql',
-    dag=dag,
-)
-
-# [END howto_operator_mysql_external_file]
-
-drop_table_mysql_task >> mysql_task
+@pytest.mark.system("asana")
+class AsanaExampleDagsSystemTest(SystemTest):
+    def test_run_example_dag_asana(self):
+        self.run_dag("example_asana", DAG_FOLDER)
